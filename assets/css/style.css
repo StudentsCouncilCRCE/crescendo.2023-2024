@@ -8,10 +8,22 @@
 
 html,
 body {
+    background-color: #f1f1f1 !important;
     height: 100%;
     width: 100%;
+    font-family: 'Montserrat', sans-serif !important;
+    scroll-behavior: smooth !important;
 }
 
+.navbar-custom{
+    background-color: transparent;
+}
+
+@media (max-width: 992px) {
+    .navbar-custom{
+        background-color: #f1f1f1;
+    }
+}
 .main {
     position: relative;
     overflow: hidden;
@@ -24,28 +36,194 @@ body {
     background-color: #f1f1f1;
 }
 
+.hero-left {
+    position: absolute;
+    top: 60%;
+    width: 35%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    left: 5%;
+}
+
+.hero-right {
+    position: absolute;
+    top: 60%;
+    width: 35%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    right: 5%;
+    direction: rtl;
+}
+
+@media (max-width: 480px) {
+    .hero-left{
+        top: 10%;
+        width: 95%;
+    }
+    .hero-right{
+        top: 25%;
+        width: 95%;
+    }
+}
+
+@media (max-width: 850px)and (min-width: 481px) {
+    .hero-left{
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+    .hero-right{
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+}
+
 .page2 {
     height: 100vh;
     width: 100vw;
-    background-color: red;
+    background-color: #f1f1f1;
+}
+
+.page2>.left {
+    position: absolute;
+    top: 32%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    left: 5%;
+}
+
+.page2>.right {
+    position: absolute;
+    top: 50%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    right: 5%;
+    direction: rtl;
+}
+
+@media (max-width: 480px) {
+    .page2>.left{
+        top: 10%;
+        font-size: 2rem;
+    }
+    .page2>.right{
+        top: 25%;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 850px) and (min-width: 481px) {
+    .page2>.left{
+        top: 10%;
+        font-size: 1.5rem;
+    }
+    .page2>.right{
+        top: 15%;
+        font-size: 1.5rem;
+    }
 }
 
 .page3 {
     height: 100vh;
     width: 100vw;
-    background-color: green;
+    background-color: #f1f1f1;
+}
+
+.page3>.left {
+    position: absolute;
+    top: 32%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    left: 5%;
+}
+
+.page3>.right {
+    position: absolute;
+    top: 50%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    right: 5%;
+    direction: rtl;
+}
+
+@media (max-width: 480px) {
+    .page3>.left{
+        top: 10%;
+        font-size: 2rem;
+    }
+    .page3>.right{
+        top: 25%;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 850px) and (min-width: 481px) {
+    .page3>.left{
+        top: 10%;
+        font-size: 1.5rem;
+    }
+    .page3>.right{
+        top: 15%;
+        font-size: 1.5rem;
+    }
 }
 
 .page4 {
     height: 100vh;
     width: 100vw;
-    background-color: blue;
+    background-color: #f1f1f1;
+}
+
+.page4>.left {
+    position: absolute;
+    top: 32%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    left: 5%;
+}
+
+.page4>.right {
+    position: absolute;
+    top: 50%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    right: 5%;
+    direction: rtl;
+}
+
+@media (max-width: 480px) {
+    .page4>.left{
+        top: 10%;
+        font-size: 2rem;
+    }
+    .page4>.right{
+        top: 25%;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 850px) and (min-width: 481px) {
+    .page4>.left{
+        top: 10%;
+        font-size: 1.5rem;
+    }
+    .page4>.right{
+        top: 15%;
+        font-size: 1.5rem;
+    }
 }
 
 .page5 {
     height: 100vh;
     width: 100vw;
-    background-color: yellow;
+    background-color: #f1f1f1;
 }
 
 canvas {
@@ -67,6 +245,7 @@ canvas {
 }
 
 .loop>h1 {
+    font-size: 7rem;
     font-weight: 400;
     animation-name: animation;
     animation-duration: 16s;
@@ -90,29 +269,10 @@ canvas {
     }
 }
 
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Montserrat', sans-serif;
-    height: 7%;
-    width: 100%;
-    position: fixed;
-    z-index: 1000;
-    padding: 0px 30px;
-}
-
-.nav>h1 {
-    font-weight: 400;
-    font-size: 1.5rem;
-}
-
-.buttons{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Montserrat', sans-serif;
-    width: 28%;
+@media (max-width: 480px) {
+    .loop{
+        top: 55%;
+    }
 }
 
 .btnnn {
@@ -243,7 +403,7 @@ canvas {
     position: absolute;
     width: 0%;
     height: 2px;
-    background-color: #fff;
+    background-color: #000;
     transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
     transition-duration: 400ms;
     transition-property: width, left;

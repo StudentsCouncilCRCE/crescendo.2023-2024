@@ -380,16 +380,29 @@ gsap.to(imageSeq, {
 images[1].onload = render;
 
 function render() {
-  scaleImage(images[imageSeq.frame], context);
+  const currentWidth = window.innerWidth;
+  let scaleFactor;
+
+  if (currentWidth <= 200) {
+    scaleFactor = 0.5;
+  } else if (currentWidth <= 500) {
+    scaleFactor = 0.6;
+  } else if (currentWidth <= 768) {
+    scaleFactor = 0.75;
+  } else {
+    scaleFactor = 0.9;
+  }
+
+  scaleImage(images[imageSeq.frame], context, scaleFactor);
 }
 
-function scaleImage(img, ctx) {
+function scaleImage(img, ctx, scaleFactor) {
   var canvas = ctx.canvas;
   var hRatio = canvas.width / img.width;
   var vRatio = canvas.height / img.height;
-  var ratio = Math.max(hRatio, vRatio);
+  var ratio = Math.max(hRatio, vRatio) * scaleFactor;
   var centerShift_x = (canvas.width - img.width * ratio) / 2;
-  var centerShift_y = (canvas.height - img.height * ratio) / 2;
+  var centerShift_y = canvas.height - img.height * ratio;
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   ctx.drawImage(
     img,
@@ -406,7 +419,6 @@ function scaleImage(img, ctx) {
 ScrollTrigger.create({
   trigger: ".page1>canvas",
   pin: true,
-  // markers:true,
   scroller: `.main`,
   start: `top top`,
   end: `600% top`,
