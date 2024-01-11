@@ -220,9 +220,7 @@
                         </div>
 
                         <!-- Section content -->
-                        <div x-data="{ tab: '1' }">
-
-                       
+                        <div x-data="{ tab: '1' }"> 
                             <div class="flex flex-wrap justify-center -m-2" data-aos="fade-up" data-aos-delay="400" data-aos-anchor="[data-aos-id-tabs]">
                                 <button :class="{ 'opacity-50': tab !== '1' }" class="flex items-center font-medium py-2 px-4 m-2 bg-gray-800 rounded-full group transition duration-500" @click="tab = '1'">
                                     <svg class="w-4 h-4 fill-current text-purple-600 mr-2" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
@@ -241,26 +239,37 @@
                                         <path d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm0 10c-1.1 0-2-.9-2-2 0-.2 0-.3.1-.5L3.6 5 5 3.6l2.5 2.5c.2-.1.3-.1.5-.1 1.1 0 2 .9 2 2s-.9 2-2 2z" />
                                     </svg>
                                     <span class="text-gray-400 group-hover:text-gray-200 transition-colors duration-150 ease-in-out">Elexathon</span>
-                                </button>
-                                
+                                </button>       
                             </div>
 
                      
                             <div class="relative flex flex-col mt-16" data-aos="fade-up">
-                                    <div class="carde">
-                                      <div class="wrappere">
-                                        <img src="https://ggayane.github.io/css-experiments/cards/dark_rider-cover.jpg" class="cover-image" />
-                                      </div>
-                                      <img src="https://ggayane.github.io/css-experiments/cards/dark_rider-title.png" class="title" />
-                                      <img src="https://ggayane.github.io/css-experiments/cards/dark_rider-character.webp" class="character" />
-                                    </div>
-                                  
-                                    <div class="carde">
-                                      <div class="wrappere">
-                                        <img src="https://ggayane.github.io/css-experiments/cards/force_mage-cover.jpg" class="cover-image" />
-                                      </div>
-                                      <img src="https://ggayane.github.io/css-experiments/cards/force_mage-title.png" class="title" />
-                                      <img src="https://ggayane.github.io/css-experiments/cards/force_mage-character.webp" class="character" />
+                                     <!-- Card Container with Flexbox -->
+                                    <div class="flex flex-wrap justify-center -m-2">
+                                         <!-- First Card Hackathon -->
+                                         <div class="carde m-2">
+                                            <div class="wrappere">
+                                                <img src="https://ggayane.github.io/css-experiments/cards/dark_rider-cover.jpg" class="cover-image" />
+                                            </div>
+                                            <img src="https://ggayane.github.io/css-experiments/cards/dark_rider-title.png" class="title" />
+                                            <img src="https://ggayane.github.io/css-experiments/cards/dark_rider-character.webp" class="character" />
+                                        </div>
+                                        <!-- Second Card Mechathon -->
+                                        <div class="carde m-2">
+                                            <div class="wrappere">
+                                                <img src="https://ggayane.github.io/css-experiments/cards/force_mage-cover.jpg" class="cover-image" />
+                                            </div>
+                                            <img src="https://ggayane.github.io/css-experiments/cards/force_mage-title.png" class="title" />
+                                            <img src="https://ggayane.github.io/css-experiments/cards/force_mage-character.webp" class="character" />
+                                        </div>
+                                        <!-- Third Card Elexathon -->
+                                        <div class="carde m-2">
+                                            <div class="wrappere">
+                                                <img src="https://ggayane.github.io/css-experiments/cards/force_mage-cover.jpg" class="cover-image" />
+                                            </div>
+                                            <img src="https://ggayane.github.io/css-experiments/cards/force_mage-title.png" class="title" />
+                                            <img src="https://ggayane.github.io/css-experiments/cards/force_mage-character.webp" class="character" />
+                                        </div>
                                     </div>
                             </div>
 
@@ -372,7 +381,7 @@
                                 <!-- 3rd article -->
                                 <article class="flex flex-col h-full" data-aos="fade-up" data-aos-delay="400">
                                     <div class="containerr">
-                                        <article class="main-image">
+                                        <article class="main-image transform hover:scale-105 transition duration-700 ease-out">
                                           <img src="https://deepeshyadavrd.github.io/nft-card-component/images/image-equilibrium.jpg" alt="" />
                                         </article>
                                   
@@ -391,6 +400,28 @@
                                         </article>
                                       </div>                                                    
                                 </article>
+                                <article class="flex flex-col h-full" data-aos="fade-up" data-aos-delay="400">
+                                    <div class="containerr">
+                                        <article class="main-image transform hover:scale-105 transition duration-700 ease-out">
+                                          <img src="https://deepeshyadavrd.github.io/nft-card-component/images/image-equilibrium.jpg" alt="" />
+                                        </article>
+                                  
+                                        <article>
+                                          <h1>Equilibrium #3429</h1>
+                                          <p>Our Equilibrium collection promotes balance and calm.</p>
+                                          <ul>
+                                            <li><img src="https://deepeshyadavrd.github.io/nft-card-component/images/icon-ethereum.svg" alt="" /> 0.041 ETH</li>
+                                            <li><img src="https://deepeshyadavrd.github.io/nft-card-component/images/icon-clock.svg" alt="" /> 3 days left</li>
+                                          </ul>
+                                        </article>
+                                  
+                                        <article class="avatar">
+                                          <img src="https://deepeshyadavrd.github.io/nft-card-component/images/image-avatar.png" alt="" />
+                                          <p>Creation of <span>Jules Wyvern</span></p>
+                                        </article>
+                                      </div>                                                    
+                                </article>
+                                
 
                             </div>
                         </div>
