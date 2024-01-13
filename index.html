@@ -139,7 +139,7 @@
                 </div>
             </section>
 
-            <div id="app" class="container">
+            <!-- <div id="app" class="container">
                 <card data-image="https://cdn.pixabay.com/photo/2018/05/27/15/28/technology-3433708_960_720.jpg">
                     <h1 slot="header">DevOps</h1>
                     <p class="card-content" slot="content">Hodor. Hodor hodor, hodor. Hodor hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor,
@@ -172,7 +172,7 @@
                     <p class="card-content" slot="content">Hodor. Hodor hodor, hodor. Hodor hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor,
                         hodor; hodor hodor hodor. Hodor.</p>
                 </card>
-            </div>
+            </div> -->
 
             <section>
                 <div class="max-w-6xl mx-auto px-4 sm:px-6">
@@ -335,23 +335,49 @@
                     </div>
                 </div>
             </section>
-            
-            <section class="bg-white dark:bg-gray-900">
-                <div class="max-w-6xl container px-6 py-12 mx-auto">
-                    
-            
-                        <div class="overflow-hidden rounded-lg lg:col-span-2 h-96 lg:h-auto">
-                            <iframe width="100%" height="100%" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15085.76451410675!2d72.8203705!3d19.044333!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9410830616d%3A0x111b63353dbbce01!2sFr.%20Conceicao%20Rodrigues%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1704995769873!5m2!1sen!2sin"></iframe>
+        </main>
+    </div>    
+
+     <section class="dark:bg-gray-900 p-5">
+        <div class="flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-8">
+            <!-- Contact Form Section -->
+            <div class="md:w-full lg:w-1/2">
+                <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md form-entry">
+                    <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-white">Write To Us</h2>
+                    <form action="#" class="space-y-8">
+                        <div>
+                            <label for="email" class="block mb-2 text-md font-medium text-white dark:text-gray-300">Your email</label>
+                            <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required>
                         </div>
+                        <div>
+                            <label for="subject" class="block mb-2 text-md font-medium text-white dark:text-gray-300">Subject</label>
+                            <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required>
+                        </div>
+                        <div class="sm:col-span-2">
+                            <label for="message" class="block mb-2 text-md font-medium text-white dark:text-gray-400">Your message</label>
+                            <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+                        </div>
+                        <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 transition duration-300 transform hover:scale-105">Register Now</button>
+                    </form>
+                </div>
+            </div>
+            <div class="md:w-full lg:w-1/2">
+                <section class="bg-white dark:bg-gray-900 h-full">
+                    <div class="max-w-6xl container px-6 py-12 mx-auto">
+                        <div class="maps overflow-hidden rounded-lg lg:col-span-2 h-96 lg:h-full shadow-lg">
+                        <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.4411288196648!2d72.81818181458672!3d19.044332987106053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9410830616d%3A0x111b63353dbbce01!2sFr.%20Conceicao%20Rodrigues%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1670686969125!5m2!1sen!2sin"
+                        width="675" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
-            </section>
-        </main>
-
-        
-    </div>      
-    <footer>
-        <div class="container mx-auto flex items-center justify-center">
+            </section> 
+        </div>  
+        </div>
+    </section>   
+ 
+    <footer class="text-center">
+        <div class="mx-auto my-2 flex items-center justify-center">
           <p class="text-md text-gray-500 font-bold">
             Copyright &copy; 2024 - All Rights Reserved by Students' Council CRCE.
             Designed and developed by
@@ -369,6 +395,40 @@
     <script src="./js/vendors/alpinejs.min.js" defer></script>
     <script src="./js/vendors/aos.js"></script>
     <script src="./js/main.js"></script>
+    <script>
+        function showContent(content) {
+            const formContent = document.getElementById('ContactForm');
+            const mapContent = document.getElementById('ContactMap');
+    
+            if (content === 'ContactForm') {
+                formContent.classList.remove('hidden');
+                mapContent.classList.add('hidden');
+            } else if (content === 'ContactMap') {
+                formContent.classList.add('hidden');
+                mapContent.classList.remove('hidden');
+            }
+        }
+    </script>
+    <script>
+        function showContent(content) {
+            const contactForm = document.getElementById('contact-form');
+            const mapContainer = document.getElementById('map-container');
+            const contactBtn = document.querySelector('.nav-btn:nth-child(1)');
+            const mapBtn = document.querySelector('.nav-btn:nth-child(2)');
+    
+            if (content === 'contact') {
+                contactForm.classList.remove('hidden');
+                mapContainer.classList.add('hidden');
+                contactBtn.classList.add('active');
+                mapBtn.classList.remove('active');
+            } else if (content === 'map') {
+                contactForm.classList.add('hidden');
+                mapContainer.classList.remove('hidden');
+                contactBtn.classList.remove('active');
+                mapBtn.classList.add('active');
+            }
+        }
+    </script>
     <script>
         // Select all elements with class "page"
         const cards = document.querySelectorAll(".page");
