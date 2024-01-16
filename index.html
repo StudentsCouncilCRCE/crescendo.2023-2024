@@ -32,47 +32,43 @@
 
                         <ul class="flex grow justify-end flex-wrap items-center">
                             <li>
-                                <a class="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out" href="#events">Events</a>
+                                <a class="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out"
+                                    href="#events">Events</a>
                             </li>
                             <li>
-                                <a class="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out" href="#faq">FAQ</a>
+                                <a class="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out"
+                                    href="#faq">FAQ</a>
                             </li>
                             <li>
-                                <a class="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out" href="#contact">Contact</a>
+                                <a class="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out"
+                                    href="#contact">Contact</a>
                             </li>
                             <li>
-                                <a class="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out" href="">Brochure</a>
+                                <a class="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out"
+                                    href="">Brochure</a>
                             </li>
                         </ul>
 
                     </nav>
-                    
+
                     <div class="md:hidden" x-data="{ expanded: false }">
 
-                        <button
-                            class="hamburger"
-                            :class="{ 'active': expanded }"
-                            @click.stop="expanded = !expanded"
-                            aria-controls="mobile-nav"
-                            :aria-expanded="expanded"
-                        >
+                        <button class="hamburger" :class="{ 'active': expanded }" @click.stop="expanded = !expanded"
+                            aria-controls="mobile-nav" :aria-expanded="expanded">
                             <span class="sr-only">Menu</span>
-                            <svg class="w-6 h-6 fill-current text-gray-300 hover:text-gray-200 transition duration-150 ease-in-out" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="w-6 h-6 fill-current text-gray-300 hover:text-gray-200 transition duration-150 ease-in-out"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <rect y="4" width="24" height="2" rx="1" />
                                 <rect y="11" width="24" height="2" rx="1" />
                                 <rect y="18" width="24" height="2" rx="1" />
                             </svg>
                         </button>
 
-                        <nav
-                            id="mobile-nav"
+                        <nav id="mobile-nav"
                             class="absolute top-full z-20 left-0 w-full px-4 sm:px-6 overflow-hidden transition-all duration-300 ease-in-out"
                             x-ref="mobileNav"
                             :style="expanded ? 'max-height: ' + $refs.mobileNav.scrollHeight + 'px; opacity: 1' : 'max-height: 0; opacity: .8'"
-                            @click.outside="expanded = false"
-                            @keydown.escape.window="expanded = false"
-                            x-cloak
-                        >
+                            @click.outside="expanded = false" @keydown.escape.window="expanded = false" x-cloak>
                             <ul class="bg-gray-800 px-4 py-2">
                                 <li>
                                     <a class="flex text-gray-300 hover:text-gray-200 py-2" href="#events">Events</a>
@@ -96,41 +92,53 @@
         </header>
 
         <main class="grow">
-            <spline-viewer loading-anim-type="spinner-big-light" url="https://prod.spline.design/Nsp7xF3TcXMFVfZW/scene.splinecode" style="height: 100vh;"></spline-viewer>
+            <spline-viewer loading-anim-type="spinner-big-light"
+                url="https://prod.spline.design/Nsp7xF3TcXMFVfZW/scene.splinecode"
+                style="height: 100vh;"></spline-viewer>
             <section>
                 <div class="max-w-6xl mx-auto px-4 sm:px-6">
                     <div class="py-12 md:py-20 border-t border-gray-800">
 
                         <div class="max-w-3xl mx-auto text-center pb-12" data-aos-id-tabs>
-                            <h2 class="h2 mb-4" data-aos="fade-up" data-aos-anchor="[data-aos-id-tabs]">Flagship Events</h2>
+                            <h2 class="h2 mb-4" data-aos="fade-up" data-aos-anchor="[data-aos-id-tabs]">Flagship Events
+                            </h2>
                         </div>
 
-                        <div x-data="{ tab: '1' }"> 
-                     
+                        <div x-data="{ tab: '1' }">
+
                             <div class="relative flex flex-col mt-6" data-aos="fade-up">
-                                    <div class="flex flex-wrap justify-center -m-2">
-                                         <div class="carde m-2">
-                                            <div class="wrappere">
-                                                <img src="https://ggayane.github.io/css-experiments/cards/dark_rider-cover.jpg" class="cover-image" />
-                                            </div>
-                                            <img src="https://ggayane.github.io/css-experiments/cards/dark_rider-title.png" class="title" />
-                                            <img src="https://ggayane.github.io/css-experiments/cards/dark_rider-character.webp" class="character" />
+                                <div class="flex flex-wrap justify-center -m-2">
+                                    <div class="carde m-2">
+                                        <div class="wrappere">
+                                            <img src="https://ggayane.github.io/css-experiments/cards/dark_rider-cover.jpg"
+                                                class="cover-image" />
                                         </div>
-                                        <div class="carde m-2">
-                                            <div class="wrappere">
-                                                <img src="https://ggayane.github.io/css-experiments/cards/force_mage-cover.jpg" class="cover-image" />
-                                            </div>
-                                            <img src="https://ggayane.github.io/css-experiments/cards/force_mage-title.png" class="title" />
-                                            <img src="https://ggayane.github.io/css-experiments/cards/force_mage-character.webp" class="character" />
-                                        </div>
-                                        <div class="carde m-2">
-                                            <div class="wrappere">
-                                                <img src="https://ggayane.github.io/css-experiments/cards/force_mage-cover.jpg" class="cover-image" />
-                                            </div>
-                                            <img src="https://ggayane.github.io/css-experiments/cards/force_mage-title.png" class="title" />
-                                            <img src="https://ggayane.github.io/css-experiments/cards/force_mage-character.webp" class="character" />
-                                        </div>
+                                        <img src="https://ggayane.github.io/css-experiments/cards/dark_rider-title.png"
+                                            class="title" />
+                                        <img src="https://ggayane.github.io/css-experiments/cards/dark_rider-character.webp"
+                                            class="character" />
                                     </div>
+                                    <div class="carde m-2">
+                                        <div class="wrappere">
+                                            <img src="https://ggayane.github.io/css-experiments/cards/force_mage-cover.jpg"
+                                                class="cover-image" />
+                                        </div>
+                                        <img src="https://ggayane.github.io/css-experiments/cards/force_mage-title.png"
+                                            class="title" />
+                                        <img src="https://ggayane.github.io/css-experiments/cards/force_mage-character.webp"
+                                            class="character" />
+                                    </div>
+                                    <div class="carde m-2">
+                                        <div class="wrappere">
+                                            <img src="https://ggayane.github.io/css-experiments/cards/force_mage-cover.jpg"
+                                                class="cover-image" />
+                                        </div>
+                                        <img src="https://ggayane.github.io/css-experiments/cards/force_mage-title.png"
+                                            class="title" />
+                                        <img src="https://ggayane.github.io/css-experiments/cards/force_mage-character.webp"
+                                            class="character" />
+                                    </div>
+                                </div>
                             </div>
 
                         </div>
@@ -244,90 +252,123 @@
                                 <article class="flex flex-col h-full" data-aos="fade-up" data-aos-delay="400">
                                     <div id="app">
                                         <div class="page">
-                                          <div class="front">
-                                            <div class="image"><img src="https://i.ibb.co/gmkfJnh/image-equilibrium.jpg" alt="nft" title="nft"/>
-                                              <div class="overlay"><i class="fas fa-eye"></i></div>
+                                            <div class="front">
+                                                <div class="image"><img
+                                                        src="https://i.ibb.co/gmkfJnh/image-equilibrium.jpg" alt="nft"
+                                                        title="nft" />
+                                                    <div class="overlay"><i class="fas fa-eye"></i></div>
+                                                </div>
+                                                <div class="content">
+                                                    <h2>Equilibrium #3429</h2>
+                                                    <h4 class="font-bold">Our Equilibrium collection promotes balance
+                                                        and calm</h4>
+                                                </div>
+                                                <div class="wrap">
+                                                    <span><i class="fab fa-ethereum"></i>
+                                                        <span class="ic">0.041 ETH</span>
+                                                    </span>
+                                                    <span><i class="fas fa-clock"></i><span class="ic">3 days
+                                                            left</span></span>
+                                                </div>
+
                                             </div>
-                                            <div class="content">
-                                              <h2>Equilibrium #3429</h2>
-                                              <h4 class="font-bold">Our Equilibrium collection promotes balance and calm</h4>
-                                            </div>
-                                             <div class="wrap">
-                                                <span><i class="fab fa-ethereum"></i>
-                                                    <span class="ic">0.041 ETH</span>
+                                            <div class="back">
+                                                <div class="profile"></div><span class="meinname">Creation of
+                                                    <h5 class="name">anish</h5>
                                                 </span>
-                                                    <span><i class="fas fa-clock"></i><span class="ic">3 days left</span></span>
+                                                <div class="contact"><a href="https://codepen.io/coding_anish"
+                                                        target="_blank" onclick="void(0);"><i
+                                                            class="fab fa-codepen"></i></a><a
+                                                        href="https://twitter.com/sisyphus_coding" target="_blank"
+                                                        onclick="void(0);"><i class="fab fa-twitter"></i></a></div>
+                                                <button type="button"
+                                                    class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Register
+                                                    Now</button>
                                             </div>
-                                            
-                                          </div>
-                                          <div class="back">
-                                            <div class="profile"></div><span class="meinname">Creation of
-                                              <h5 class="name">anish</h5></span>
-                                            <div class="contact"><a href="https://codepen.io/coding_anish" target="_blank" onclick="void(0);"><i class="fab fa-codepen"></i></a><a href="https://twitter.com/sisyphus_coding" target="_blank" onclick="void(0);"><i class="fab fa-twitter"></i></a></div>
-                                            <button type="button" class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Register Now</button>
                                         </div>
-                                        </div>
-                                      </div>                                                      
+                                    </div>
                                 </article>
 
                                 <article class="flex flex-col h-full" data-aos="fade-up" data-aos-delay="400">
                                     <div id="app">
                                         <div class="page">
-                                          <div class="front">
-                                            <div class="image"><img src="https://i.ibb.co/gmkfJnh/image-equilibrium.jpg" alt="nft" title="nft"/>
-                                              <div class="overlay"><i class="fas fa-eye"></i></div>
-                                            </div>
-                                            <div class="content">
-                                              <h2>Equilibrium #3429</h2>
-                                              <h4 class="font-bold">Our Equilibrium collection promotes balance and calm</h4>
-                                            </div>
-                                             <div class="wrap">
-                                                <span><i class="fab fa-ethereum"></i>
-                                                    <span class="ic">0.041 ETH</span>
-                                                </span>
-                                                    <span><i class="fas fa-clock"></i><span class="ic">3 days left</span></span>
-                                            </div>
-                                            
-                                          </div>
-                                          <div class="back">
-                                            <div class="profile"></div><span class="meinname">Creation of
-                                              <h5 class="name">anish</h5></span>
-                                            <div class="contact"><a href="https://codepen.io/coding_anish" target="_blank" onclick="void(0);"><i class="fab fa-codepen"></i></a><a href="https://twitter.com/sisyphus_coding" target="_blank" onclick="void(0);"><i class="fab fa-twitter"></i></a></div>
-                                            <button type="button" class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Register Now</button>
+                                            <div class="front">
+                                                <div class="image"><img
+                                                        src="https://i.ibb.co/gmkfJnh/image-equilibrium.jpg" alt="nft"
+                                                        title="nft" />
+                                                    <div class="overlay"><i class="fas fa-eye"></i></div>
+                                                </div>
+                                                <div class="content">
+                                                    <h2>Equilibrium #3429</h2>
+                                                    <h4 class="font-bold">Our Equilibrium collection promotes balance
+                                                        and calm</h4>
+                                                </div>
+                                                <div class="wrap">
+                                                    <span><i class="fab fa-ethereum"></i>
+                                                        <span class="ic">0.041 ETH</span>
+                                                    </span>
+                                                    <span><i class="fas fa-clock"></i><span class="ic">3 days
+                                                            left</span></span>
+                                                </div>
 
+                                            </div>
+                                            <div class="back">
+                                                <div class="profile"></div><span class="meinname">Creation of
+                                                    <h5 class="name">anish</h5>
+                                                </span>
+                                                <div class="contact"><a href="https://codepen.io/coding_anish"
+                                                        target="_blank" onclick="void(0);"><i
+                                                            class="fab fa-codepen"></i></a><a
+                                                        href="https://twitter.com/sisyphus_coding" target="_blank"
+                                                        onclick="void(0);"><i class="fab fa-twitter"></i></a></div>
+                                                <button type="button"
+                                                    class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Register
+                                                    Now</button>
+
+                                            </div>
                                         </div>
-                                        </div>
-                                      </div>                                                      
+                                    </div>
                                 </article>
-                                
+
                                 <article class="flex flex-col h-full" data-aos="fade-up" data-aos-delay="400">
                                     <div id="app">
                                         <div class="page">
-                                          <div class="front">
-                                            <div class="image"><img src="https://i.ibb.co/gmkfJnh/image-equilibrium.jpg" alt="nft" title="nft"/>
-                                              <div class="overlay"><i class="fas fa-eye"></i></div>
+                                            <div class="front">
+                                                <div class="image"><img
+                                                        src="https://i.ibb.co/gmkfJnh/image-equilibrium.jpg" alt="nft"
+                                                        title="nft" />
+                                                    <div class="overlay"><i class="fas fa-eye"></i></div>
+                                                </div>
+                                                <div class="content">
+                                                    <h2>Equilibrium #3429</h2>
+                                                    <h4 class="font-bold">Our Equilibrium collection promotes balance
+                                                        and calm</h4>
+                                                </div>
+                                                <div class="wrap">
+                                                    <span><i class="fab fa-ethereum"></i>
+                                                        <span class="ic">0.041 ETH</span>
+                                                    </span>
+                                                    <span><i class="fas fa-clock"></i><span class="ic">3 days
+                                                            left</span></span>
+                                                </div>
+
                                             </div>
-                                            <div class="content">
-                                              <h2>Equilibrium #3429</h2>
-                                              <h4 class="font-bold">Our Equilibrium collection promotes balance and calm</h4>
-                                            </div>
-                                             <div class="wrap">
-                                                <span><i class="fab fa-ethereum"></i>
-                                                    <span class="ic">0.041 ETH</span>
+                                            <div class="back">
+                                                <div class="profile"></div><span class="meinname">Creation of
+                                                    <h5 class="name">anish</h5>
                                                 </span>
-                                                    <span><i class="fas fa-clock"></i><span class="ic">3 days left</span></span>
+                                                <div class="contact"><a href="https://codepen.io/coding_anish"
+                                                        target="_blank" onclick="void(0);"><i
+                                                            class="fab fa-codepen"></i></a><a
+                                                        href="https://twitter.com/sisyphus_coding" target="_blank"
+                                                        onclick="void(0);"><i class="fab fa-twitter"></i></a></div>
+                                                <button type="button"
+                                                    class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Register
+                                                    Now</button>
+
                                             </div>
-                                            
-                                          </div>
-                                          <div class="back">
-                                            <div class="profile"></div><span class="meinname">Creation of
-                                              <h5 class="name">anish</h5></span>
-                                            <div class="contact"><a href="https://codepen.io/coding_anish" target="_blank" onclick="void(0);"><i class="fab fa-codepen"></i></a><a href="https://twitter.com/sisyphus_coding" target="_blank" onclick="void(0);"><i class="fab fa-twitter"></i></a></div>
-                                            <button type="button" class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Register Now</button>
-  
                                         </div>
-                                        </div>
-                                      </div>                                                      
+                                    </div>
                                 </article>
                             </div>
                         </div>
@@ -336,9 +377,9 @@
                 </div>
             </section>
         </main>
-    </div>    
+    </div>
 
-     <section class="dark:bg-gray-900 p-5">
+    <section class="dark:bg-gray-900 p-5">
         <div class="flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-8">
             <!-- Contact Form Section -->
             <div class="md:w-full lg:w-1/2">
@@ -346,18 +387,30 @@
                     <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-white">Write To Us</h2>
                     <form action="#" class="space-y-8">
                         <div>
-                            <label for="email" class="block mb-2 text-md font-medium text-white dark:text-gray-300">Your email</label>
-                            <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required>
+                            <label for="email" class="block mb-2 text-md font-bold text-white dark:text-gray-300">Your
+                                email</label>
+                            <input type="email" id="email"
+                                class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                                placeholder="name@flowbite.com" required>
                         </div>
                         <div>
-                            <label for="subject" class="block mb-2 text-md font-medium text-white dark:text-gray-300">Subject</label>
-                            <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required>
+                            <label for="subject"
+                                class="block mb-2 text-md font-bold text-white dark:text-gray-300">Subject</label>
+                            <input type="text" id="subject"
+                                class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                                placeholder="Let us know how we can help you" required>
                         </div>
                         <div class="sm:col-span-2">
-                            <label for="message" class="block mb-2 text-md font-medium text-white dark:text-gray-400">Your message</label>
-                            <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+                            <label for="message" class="block mb-2 text-md font-bold text-white dark:text-gray-400">Your
+                                message</label>
+                            <textarea id="message" rows="6"
+                                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                placeholder="Leave a comment..."></textarea>
                         </div>
-                        <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 transition duration-300 transform hover:scale-105">Register Now</button>
+                        <button type="submit"
+                            class="py-3 px-5 text-sm font-medium text-center text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 transition duration-300 transform hover:scale-105">
+                            <p class="font-bold">Register Now</p>
+                        </button>
                     </form>
                 </div>
             </div>
@@ -365,29 +418,143 @@
                 <section class="bg-white dark:bg-gray-900 h-full">
                     <div class="max-w-6xl container px-6 py-12 mx-auto">
                         <div class="maps overflow-hidden rounded-lg lg:col-span-2 h-96 lg:h-full shadow-lg">
-                        <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.4411288196648!2d72.81818181458672!3d19.044332987106053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9410830616d%3A0x111b63353dbbce01!2sFr.%20Conceicao%20Rodrigues%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1670686969125!5m2!1sen!2sin"
-                        width="675" height="500" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe id="myIframe"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.4411288196648!2d72.81818181458672!3d19.044332987106053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9410830616d%3A0x111b63353dbbce01!2sFr.%20Conceicao%20Rodrigues%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1670686969125!5m2!1sen!2sin"
+                                width="675" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
                     </div>
-                </div>
-            </section> 
-        </div>  
+                </section>
+            </div>
         </div>
-    </section>   
- 
+    </section>
+
+    <section class="bg-white dark:bg-gray-900">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+            <h2 class="mb-4 text-4xl tracking-tight text-center font-extrabold text-gray-900 dark:text-white py-3">
+                Contact Us</h2>
+
+            <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0" id="attempt1">
+                <div class="councilmen">
+                    <div
+                        class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+                        <img class="w-10 h-10 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
+                            src="./images/chris-gracias.jpg" alt="Bordered avatar">
+                    </div>
+                    <h3 class="mb-2 text-xl font-bold dark:text-white">Chris Gracias</h3>
+                    <h5 class="text-gray-500 dark:text-gray-400">(General Secretary)</h5>
+                    <p class="text-gray-500 dark:text-gray-400">Phone:+91 9004142802</p>
+                </div>
+                <div class="councilmen">
+                    <div
+                        class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+                        <img class="w-10 h-10 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
+                            src="./images/vignesh-kombhatula.jpeg" alt="Bordered avatar">
+                    </div>
+                    <h3 class="mb-2 text-xl font-bold dark:text-white">Vignesh R Kombathula</h3>
+                    <h5 class="text-gray-500 dark:text-gray-400">(Technical Secretary)</h5>
+                    <p class="text-gray-500 dark:text-gray-400">Phone:+91 7715826632 </p>
+                </div>
+                <div class="councilmen">
+                    <div
+                        class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+                        <img class="w-10 h-10 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
+                            src="./images/grace-antony.jpg" alt="Bordered avatar">
+                    </div>
+                    <h3 class="mb-2 text-xl font-bold dark:text-white">Grace Anthony</h3>
+                    <h5 class="text-gray-500 dark:text-gray-400">(Technical Secretary)</h5>
+                    <p class="text-gray-500 dark:text-gray-400">Phone:+91 9321182692</p>
+                </div>
+            </div>
+        </div>   
+    </section>
+
+    <!-- <section>
+        <div class="tooltip-container">
+            <div class="tooltip">
+              <div class="profile">
+                <div class="user">
+                  <div class="img">Ui</div>
+                  <div class="details">
+                    <div class="name">User</div>
+                    <div class="username">@username</div>
+                  </div>
+                </div>
+                <div class="about">800+ Followers</div>
+              </div>
+            </div>
+            <div class="text">
+              <a class="icon" href="#">
+                <div class="layer">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span class="instagramSVG">
+                    <svg
+                      fill="white"
+                      class="svgIcon"
+                      viewBox="0 0 448 512"
+                      height="1.5em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                      ></path>
+                    </svg>
+                  </span>
+                </div>
+                <div class="text">Instagram</div>
+              </a>
+            </div>
+          </div> 
+    </section> -->
+    <section class="social-media">
+        <div class="cardbro my-16">
+          <div class="boxshadow"></div>
+          <div class="mainstuff">
+            <div class="top"></div>
+            <div class="left side"></div>
+            <div class="right side"></div>
+            <div class="title mb-4 text-4xl tracking-tight text-center font-extrabold text-gray-900 dark:text-white py-3">SOCIALS</div>
+            <div class="button-container">
+              <button class="button" id="coolshit">
+                <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="green" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                </svg>
+              </button>
+              <button class="button" id="coolshit">
+                <svg class="svg twitter" xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="green" viewBox="0 0 512 512">
+                    <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
+                    </path>
+                </svg>
+              </button>
+              <button class="button" id="coolshit">
+                <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="green" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                    </path>
+                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+         </div>
+        </section>
+
     <footer class="text-center">
         <div class="mx-auto my-2 flex items-center justify-center">
-          <p class="text-md text-gray-500 font-bold">
-            Copyright &copy; 2024 - All Rights Reserved by Students' Council CRCE.
-            Designed and developed by
-            <a href="https://www.linkedin.com/in/itsmehxrsh/" class="text-blue-400">Harsh Vishwakarma</a>
-            & 
-            <a href="https://www.linkedin.com/in/joshua-dmello-a48aa0264" class="text-blue-400">Joshua Dmello</a>
-          </p>
+            <p class="text-md text-gray-500 font-bold">
+                Copyright &copy; 2024 - All Rights Reserved by Students' Council CRCE.
+                Designed and developed by
+                <a href="https://www.linkedin.com/in/itsmehxrsh/" class="text-blue-400">Harsh Vishwakarma</a>
+                &
+                <a href="https://www.linkedin.com/in/joshua-dmello-a48aa0264" class="text-blue-400">Joshua Dmello</a>
+            </p>
         </div>
-      </footer>
-      
+    </footer>
+
 
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.23/build/spline-viewer.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js"></script>
@@ -396,10 +563,31 @@
     <script src="./js/vendors/aos.js"></script>
     <script src="./js/main.js"></script>
     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var iframe = document.getElementById("myIframe");
+
+            function setIframeWidth() {
+                // Set the width to 100% after the iframe is loaded
+                iframe.style.width = "100%";
+            }
+
+            // Add an event listener for the "load" event
+            iframe.addEventListener("load", setIframeWidth);
+
+            // Add a resize event listener to check the window width
+            window.addEventListener("resize", function () {
+                // Check if the window width is less than or equal to 768px
+                if (window.innerWidth <= 768) {
+                    setIframeWidth();
+                }
+            });
+        });
+    </script>
+    <script>
         function showContent(content) {
             const formContent = document.getElementById('ContactForm');
             const mapContent = document.getElementById('ContactMap');
-    
+
             if (content === 'ContactForm') {
                 formContent.classList.remove('hidden');
                 mapContent.classList.add('hidden');
@@ -415,7 +603,7 @@
             const mapContainer = document.getElementById('map-container');
             const contactBtn = document.querySelector('.nav-btn:nth-child(1)');
             const mapBtn = document.querySelector('.nav-btn:nth-child(2)');
-    
+
             if (content === 'contact') {
                 contactForm.classList.remove('hidden');
                 mapContainer.classList.add('hidden');
@@ -447,11 +635,11 @@
             });
 
             image.addEventListener("click", () => {
-                 card.classList.toggle("flip");
-                });
+                card.classList.toggle("flip");
+            });
 
             contact.addEventListener("click", () => {
-                    card.classList.toggle("flip");
+                card.classList.toggle("flip");
             });
 
             document.addEventListener("keydown", (e) => {
