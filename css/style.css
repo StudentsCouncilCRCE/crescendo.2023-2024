@@ -4182,7 +4182,7 @@ img {
   font-size: 25px;
   opacity: 0;
   z-index: -1;
-  transition: all 0.2s ease-out 0s;
+  transition: all 0.8s ease-out 0s;
 }
 
 .cardbro .mainstuff .button-container {
@@ -4203,12 +4203,12 @@ img {
   color: white;
   display: grid;
   place-content: center;
-  transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: all 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
 .cardbro .mainstuff .button-container .button .svg {
   width: 15px;
-  transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
 .cardbro .mainstuff .button-container .button:nth-child(1) {
@@ -4269,7 +4269,7 @@ img {
 
 .cardbro:hover .mainstuff .button-container .button:nth-child(3) {
   bottom: 0;
-  transition-delay: 0.4s;
+  transition-delay: 0.2s;
 }
 
 .social-media{
