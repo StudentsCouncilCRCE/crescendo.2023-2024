@@ -13,9 +13,9 @@
   --card-width: calc(var(--card-height) / 1.5);
   --soft-blue: hsl(215, 51%, 70%);
   --cyan: hsl(178, 100%, 50%);
-  --main-bg: hsl(217, 54%, 11%);
-  --card-bg: hsl(216, 50%, 16%);
-  --line: hsl(215, 32%, 27%);
+  --main-bg: hsl(0, 0%, 0%);
+  --card-bg: hsl(0, 0%, 0%);
+  --line: hsl(0, 0%, 0%);
   --white: hsl(0, 0%, 100%);
 }
 
@@ -4145,7 +4145,7 @@ img {
   width: 0px;
   height: 0px;
   z-index: 2;
-  border-top: 115px solid #111827;
+  border-top: 115px solid #000000;
   border-left: 115px solid transparent;
   border-right: 115px solid transparent;
   transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -4157,7 +4157,7 @@ img {
   top: 0;
   transform: translateX(-50%);
   height: 100%;
-  background: #111827;
+  background: #000000;
   -webkit-clip-path: polygon(0% 0%, 50% 0, 95% 45%, 100% 100%, 0% 100%);
   clip-path: polygon(0% 0%, 50% 0, 95% 45%, 100% 100%, 0% 100%);
   transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86) 1s;

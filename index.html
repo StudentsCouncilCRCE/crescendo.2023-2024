@@ -13,7 +13,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="font-inter antialiased bg-gray-900 text-gray-200 tracking-tight">
+<body class="font-inter antialiased bg-black text-gray-200 tracking-tight">
 
     <div class="flex flex-col min-h-screen overflow-hidden">
 
@@ -69,7 +69,7 @@
                             x-ref="mobileNav"
                             :style="expanded ? 'max-height: ' + $refs.mobileNav.scrollHeight + 'px; opacity: 1' : 'max-height: 0; opacity: .8'"
                             @click.outside="expanded = false" @keydown.escape.window="expanded = false" x-cloak>
-                            <ul class="bg-gray-800 px-4 py-2">
+                            <ul class="bg-black px-4 py-2">
                                 <li>
                                     <a class="flex text-gray-300 hover:text-gray-200 py-2" href="#events">Events</a>
                                 </li>
@@ -379,7 +379,7 @@
         </main>
     </div>
 
-    <section class="dark:bg-gray-900 p-5">
+    <section class="dark:bg-black p-5">
         <div class="flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-8">
             <!-- Contact Form Section -->
             <div class="md:w-full lg:w-1/2">
@@ -415,7 +415,7 @@
                 </div>
             </div>
             <div class="md:w-full lg:w-1/2">
-                <section class="bg-white dark:bg-gray-900 h-full">
+                <section class="bg-white dark:bg-black h-full">
                     <div class="max-w-6xl container px-6 py-12 mx-auto">
                         <div class="maps overflow-hidden rounded-lg lg:col-span-2 h-96 lg:h-full shadow-lg">
                             <iframe id="myIframe"
@@ -429,7 +429,7 @@
         </div>
     </section>
 
-    <section class="bg-white dark:bg-gray-900">
+    <section class="bg-white dark:bg-black">
         <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
             <h2 class="mb-4 text-4xl tracking-tight text-center font-extrabold text-gray-900 dark:text-white py-3">
                 Contact Us</h2>
