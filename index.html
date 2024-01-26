@@ -94,7 +94,8 @@
         <main class="grow">
             <spline-viewer loading-anim-type="spinner-big-light"
                 url="https://prod.spline.design/mL2xesnBhr9lN5Cm/scene.splinecode"
-                style="height: 100vh;"></spline-viewer>
+                style="height: 100vh;">
+            </spline-viewer>
             <section>
                 <div class="max-w-6xl mx-auto px-4 sm:px-6">
                     <div class="py-12 md:py-20">
@@ -274,16 +275,19 @@
                                             </div>
                                             <div class="back">
                                                 <div class="profile"></div><span class="meinname">Creation of
-                                                    <h5 class="name">anish</h5>
+                                                    <div class="glitch" data-glitch="GDSC">GDSC</div>
                                                 </span>
                                                 <div class="contact"><a href="https://codepen.io/coding_anish"
                                                         target="_blank" onclick="void(0);"><i
                                                             class="fab fa-codepen"></i></a><a
                                                         href="https://twitter.com/sisyphus_coding" target="_blank"
                                                         onclick="void(0);"><i class="fab fa-twitter"></i></a></div>
-                                                <button type="button"
-                                                    class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Register
-                                                    Now</button>
+                                                    <!-- <button type="button" class="buttonpro text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
+                                                        <span> Register </span>
+                                                    </button> -->
+                                                    <button class="buttonpro">
+                                                        <span class="matrix-color">Register Now</span>
+                                                      </button>
                                             </div>
                                         </div>
                                     </div>
@@ -314,17 +318,28 @@
                                             </div>
                                             <div class="back">
                                                 <div class="profile"></div><span class="meinname">Creation of
-                                                    <h5 class="name">anish</h5>
+                                                    <div class="glitch" data-glitch="CODELABS">CODELABS</div>
                                                 </span>
                                                 <div class="contact"><a href="https://codepen.io/coding_anish"
                                                         target="_blank" onclick="void(0);"><i
                                                             class="fab fa-codepen"></i></a><a
                                                         href="https://twitter.com/sisyphus_coding" target="_blank"
                                                         onclick="void(0);"><i class="fab fa-twitter"></i></a></div>
-                                                <button type="button"
+                                                <!-- <button type="button"
                                                     class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Register
-                                                    Now</button>
-
+                                                    Now
+                                                </button> -->
+                                                <button class="coolstuff">
+                                                    P L A Y
+                                                    <div id="clip">
+                                                        <div id="leftTop" class="corner"></div>
+                                                        <div id="rightBottom" class="corner"></div>
+                                                        <div id="rightTop" class="corner"></div>
+                                                        <div id="leftBottom" class="corner"></div>
+                                                    </div>
+                                                    <span id="rightArrow" class="arrow"></span>
+                                                    <span id="leftArrow" class="arrow"></span>
+                                                </button>                                                
                                             </div>
                                         </div>
                                     </div>
@@ -355,7 +370,7 @@
                                             </div>
                                             <div class="back">
                                                 <div class="profile"></div><span class="meinname">Creation of
-                                                    <h5 class="name">anish</h5>
+                                                    <div class="glitch" data-glitch="CSI">CSI</div>
                                                 </span>
                                                 <div class="contact"><a href="https://codepen.io/coding_anish"
                                                         target="_blank" onclick="void(0);"><i
@@ -383,7 +398,7 @@
         <div class="flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-8">
             <!-- Contact Form Section -->
             <div class="md:w-full lg:w-1/2">
-                <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md form-entry">
+                <div class="py-8 lg:py-16 px-1 mx-auto max-w-screen-md form-entry justify-center">
                     <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-white">Write To Us</h2>
                     <form action="#" class="space-y-8">
                         <div>
@@ -401,26 +416,30 @@
                                 placeholder="Let us know how we can help you" required>
                         </div>
                         <div class="sm:col-span-2">
-                            <label for="message" class="block mb-2 text-md font-bold text-white dark:text-gray-400">Your
+                            <label for="message"
+                                class="block mb-2 text-md font-bold text-white dark:text-gray-400">Your
                                 message</label>
                             <textarea id="message" rows="6"
                                 class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                                 placeholder="Leave a comment..."></textarea>
                         </div>
-                        <button type="submit"
-                            class="py-3 px-5 text-sm font-medium text-center text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 transition duration-300 transform hover:scale-105">
-                            <p class="font-bold">Register Now</p>
-                        </button>
+                        <div class="flex justify-center">
+                            <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 transition duration-300 transform hover:scale-105">
+                               <p class="font-bold">Register Now</p>
+                            </button>
+                        </div>             
                     </form>
                 </div>
             </div>
+
+            <!-- Map Section -->
             <div class="md:w-full lg:w-1/2">
                 <section class="bg-white dark:bg-black h-full">
-                    <div class="max-w-6xl container px-6 py-12 mx-auto">
+                    <div class="max-w-6xl container px-2 py-12 mx-auto">
                         <div class="maps overflow-hidden rounded-lg lg:col-span-2 h-96 lg:h-full shadow-lg">
                             <iframe id="myIframe"
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.4411288196648!2d72.81818181458672!3d19.044332987106053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9410830616d%3A0x111b63353dbbce01!2sFr.%20Conceicao%20Rodrigues%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1670686969125!5m2!1sen!2sin"
-                                width="675" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                                width="775" height="500" style="border:0;" allowfullscreen="" loading="lazy"
                                 referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
@@ -438,7 +457,7 @@
                 <div class="councilmen">
                     <div
                         class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                        <img class="w-10 h-10 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
+                        <img class="w-15 h-15 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
                             src="./images/chris-gracias.jpg" alt="Bordered avatar">
                     </div>
                     <h3 class="mb-2 text-xl font-bold dark:text-white">Chris Gracias</h3>
@@ -448,23 +467,23 @@
                 <div class="councilmen">
                     <div
                         class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                        <img class="w-10 h-10 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
+                        <img class="w-15 h-15 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
                             src="./images/vignesh-kombhatula.jpeg" alt="Bordered avatar">
                     </div>
                     <h3 class="mb-2 text-xl font-bold dark:text-white">Vignesh R Kombathula</h3>
                     <h5 class="text-gray-500 dark:text-gray-400">(Technical Secretary)</h5>
                     <p class="text-gray-500 dark:text-gray-400">Phone:+91 7715826632 </p>
                 </div>
-                <div class="councilmen">
+                <!-- <div class="councilmen">
                     <div
                         class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                        <img class="w-10 h-10 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
+                        <img class="w-15 h-15 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
                             src="./images/grace-antony.jpg" alt="Bordered avatar">
                     </div>
                     <h3 class="mb-2 text-xl font-bold dark:text-white">Grace Anthony</h3>
-                    <h5 class="text-gray-500 dark:text-gray-400">(Technical Secretary)</h5>
+                    <h5 class="text-gray-500 dark:text-gray-400">(PR HEAD)</h5>
                     <p class="text-gray-500 dark:text-gray-400">Phone:+91 9321182692</p>
-                </div>
+                </div> -->
             </div>
         </div>   
     </section>
