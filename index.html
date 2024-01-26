@@ -97,7 +97,7 @@
                 style="height: 100vh;">
             </spline-viewer>
             <section>
-                <div class="max-w-6xl mx-auto px-4 sm:px-6">
+                <div class="max-w-6xl mx-auto px-4 sm:px-6" id="events">
                     <div class="py-12 md:py-20">
 
                         <div class="max-w-3xl mx-auto text-center pb-12" data-aos-id-tabs>
@@ -395,7 +395,7 @@
     </div>
 
     <section class="dark:bg-black p-5">
-        <div class="flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-8">
+        <div class="flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-8" id="faq">
             <!-- Contact Form Section -->
             <div class="md:w-full lg:w-1/2">
                 <div class="py-8 lg:py-16 px-1 mx-auto max-w-screen-md form-entry justify-center">
@@ -449,15 +449,15 @@
     </section>
 
     <section class="bg-white dark:bg-black">
-        <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6" id="contact">
             <h2 class="mb-4 text-4xl tracking-tight text-center font-extrabold text-gray-900 dark:text-white py-3">
-                Contact Us</h2>
-
+                Contact Us
+            </h2>
+    
             <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0" id="attempt1">
                 <div class="councilmen">
-                    <div
-                        class="flex justify-center items-center mb-4 w-15 h-15 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                        <img class="w-15 h-15 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
+                    <div class="flex justify-center items-center mb-4 w-12 h-12 rounded-full bg-primary-100 lg:h-16 lg:w-16 dark:bg-primary-900">
+                        <img class="w-12 h-12 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
                             src="./images/chris-gracias.jpg" alt="Bordered avatar">
                     </div>
                     <h3 class="mb-2 text-xl font-bold dark:text-white">Chris Gracias</h3>
@@ -465,9 +465,8 @@
                     <p class="text-gray-500 dark:text-gray-400">Phone:+91 9004142802</p>
                 </div>
                 <div class="councilmen">
-                    <div
-                        class="flex justify-center items-center mb-4 w-15 h-15 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                        <img class="w-15 h-15 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
+                    <div class="flex justify-center items-center mb-4 w-12 h-12 rounded-full bg-primary-100 lg:h-16 lg:w-16 dark:bg-primary-900">
+                        <img class="w-12 h-12 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
                             src="./images/vignesh-kombhatula.jpeg" alt="Bordered avatar">
                     </div>
                     <h3 class="mb-2 text-xl font-bold dark:text-white">Vignesh R Kombathula</h3>
@@ -475,18 +474,17 @@
                     <p class="text-gray-500 dark:text-gray-400">Phone:+91 7715826632 </p>
                 </div>
                 <div class="councilmen">
-                    <div
-                        class="flex justify-center items-center mb-4 w-15 h-15 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                        <img class="w-15 h-15 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
+                    <div class="flex justify-center items-center mb-4 w-12 h-12 rounded-full bg-primary-100 lg:h-16 lg:w-16 dark:bg-primary-900">
+                        <img class="w-12 h-12 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
                             src="./images/grace-antony.jpg" alt="Bordered avatar">
                     </div>
                     <h3 class="mb-2 text-xl font-bold dark:text-white">Grace Anthony</h3>
                     <h5 class="text-gray-500 dark:text-gray-400">(PR HEAD)</h5>
                     <p class="text-gray-500 dark:text-gray-400">Phone:+91 9321182692</p>
-                </div> 
+                </div>
             </div>
-        </div>   
-    </section>
+        </div>
+    </section>    
 
     <!-- <section>
         <div class="tooltip-container">
@@ -581,6 +579,28 @@
     <script src="./js/vendors/alpinejs.min.js" defer></script>
     <script src="./js/vendors/aos.js"></script>
     <script src="./js/main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navLinks = document.querySelectorAll('nav a');
+        
+            navLinks.forEach(link => {
+                link.addEventListener('click', smoothScroll);
+            });
+        
+            function smoothScroll(e) {
+                e.preventDefault();
+        
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+        
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        }); 
+    </script>
+      
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             var iframe = document.getElementById("myIframe");
