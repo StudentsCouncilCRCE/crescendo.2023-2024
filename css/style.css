@@ -4114,6 +4114,20 @@ img {
   width: 230px;
 }
 
+.heroimag{
+  background-image: url(../images/phone.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+@media (min-width: 586px) {
+  .heroimag{
+    background-image: url(../images/hero.jpg);
+  }
+}
+
 .cardbro .boxshadow {
   position: absolute;
   height: 100%;
