@@ -10,7 +10,6 @@
     <link href="./css/vendors/aos.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -44,10 +43,10 @@
                                 <a class="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out"
                                     href="#contact">Contact</a>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a class="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out"
                                     href="">Brochure</a>
-                            </li>
+                            </li> -->
                         </ul>
 
                     </nav>
@@ -80,9 +79,9 @@
                                 <li>
                                     <a class="flex text-gray-300 hover:text-gray-200 py-2" href="#contact">Contact</a>
                                 </li>
-                                <li>
+                                <!-- <li>
                                     <a class="flex text-gray-300 hover:text-gray-200 py-2" href="">Brochure</a>
-                                </li>
+                                </li> -->
                             </ul>
                         </nav>
 
@@ -785,7 +784,7 @@
             </div>
           </div> 
     </section> -->
-    <section class="social-media">
+    <!-- <section class="social-media">
         <div class="cardbro my-16">
             <div class="boxshadow"></div>
             <div class="mainstuff">
@@ -824,7 +823,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <footer class="text-center">
         <div class="mx-auto my-2 flex items-center justify-center">
@@ -839,35 +838,13 @@
     </footer>
 
     <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.23/build/spline-viewer.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
-    <script src="./js/vendors/alpinejs.min.js" defer></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script> -->
+    <!-- <script src="./js/vendors/alpinejs.min.js" defer></script> -->
     <script src="./js/vendors/aos.js"></script>
     <script src="./js/main.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const navLinks = document.querySelectorAll('nav a');
-
-            navLinks.forEach(link => {
-                link.addEventListener('click', smoothScroll);
-            });
-
-            function smoothScroll(e) {
-                e.preventDefault();
-
-                const targetId = this.getAttribute('href').substring(1);
-                const targetElement = document.getElementById(targetId);
-
-                window.scrollTo({
-                    top: targetElement.offsetTop,
-                    behavior: 'smooth'
-                });
-            }
-        }); 
-    </script>
-
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             var iframe = document.getElementById("myIframe");
@@ -885,75 +862,6 @@
                 // Check if the window width is less than or equal to 768px
                 if (window.innerWidth <= 768) {
                     setIframeWidth();
-                }
-            });
-        });
-    </script>
-    <script>
-        function showContent(content) {
-            const formContent = document.getElementById('ContactForm');
-            const mapContent = document.getElementById('ContactMap');
-
-            if (content === 'ContactForm') {
-                formContent.classList.remove('hidden');
-                mapContent.classList.add('hidden');
-            } else if (content === 'ContactMap') {
-                formContent.classList.add('hidden');
-                mapContent.classList.remove('hidden');
-            }
-        }
-    </script>
-    <script>
-        function showContent(content) {
-            const contactForm = document.getElementById('contact-form');
-            const mapContainer = document.getElementById('map-container');
-            const contactBtn = document.querySelector('.nav-btn:nth-child(1)');
-            const mapBtn = document.querySelector('.nav-btn:nth-child(2)');
-
-            if (content === 'contact') {
-                contactForm.classList.remove('hidden');
-                mapContainer.classList.add('hidden');
-                contactBtn.classList.add('active');
-                mapBtn.classList.remove('active');
-            } else if (content === 'map') {
-                contactForm.classList.add('hidden');
-                mapContainer.classList.remove('hidden');
-                contactBtn.classList.remove('active');
-                mapBtn.classList.add('active');
-            }
-        }
-    </script>
-    <script>
-        // Select all elements with class "page"
-        const cards = document.querySelectorAll(".page");
-        // Iterate through each card
-        cards.forEach((card) => {
-            const image = card.querySelector(".image");
-            const profile = card.querySelector(".profile");
-            const name = card.querySelector(".meinname");
-            const contact = card.querySelector(".contact");
-
-            card.addEventListener("click", () => {
-                card.classList.toggle("flip");
-                profile.classList.toggle("anima");
-                name.classList.toggle("anima");
-                contact.classList.toggle("anima");
-            });
-
-            image.addEventListener("click", () => {
-                card.classList.toggle("flip");
-            });
-
-            contact.addEventListener("click", () => {
-                card.classList.toggle("flip");
-            });
-
-            document.addEventListener("keydown", (e) => {
-                if (e.keyCode === 39) {
-                    card.classList.add("flip");
-                }
-                if (e.keyCode === 37) {
-                    card.classList.remove("flip");
                 }
             });
         });
