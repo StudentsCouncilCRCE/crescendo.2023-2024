@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: black !important;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    background: url(../img/hero.jpg) no-repeat center center/cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: white !important;
+}
+
+.form-label {
+    color: white !important;
+}
+
+.carde {
+    width: var(--card-width);
+    height: var(--card-height);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 36px;
+    perspective: 2500px;
+    margin: 0 50px;
+}
+
+.cover-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wrappere {
+    transition: all 0.5s;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.carde:hover .wrappere {
+    transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+    box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+}
+
+.wrappere::before,
+.wrappere::after {
+    content: "";
+    opacity: 0;
+    width: 100%;
+    height: 80px;
+    transition: all 0.5s;
+    position: absolute;
+    left: 0;
+}
+
+.wrappere::before {
+    top: 0;
+    height: 100%;
+    background-image: linear-gradient(to top,
+            transparent 46%,
+            rgba(12, 13, 19, 0.5) 68%,
+            rgba(12, 13, 19) 97%);
+}
+
+.wrappere::after {
+    bottom: 0;
+    opacity: 1;
+    background-image: linear-gradient(to bottom,
+            transparent 46%,
+            rgba(12, 13, 19, 0.5) 68%,
+            rgba(12, 13, 19) 97%);
+}
+
+.carde:hover .wrappere::before,
+.wrappere::after {
+    opacity: 1;
+}
+
+.carde:hover .wrappere::after {
+    height: 120px;
+}
+
+.title {
+    width: 100%;
+    transition: transform 0.5s;
+}
+
+.carde:hover .title {
+    transform: translate3d(0%, -50px, 100px);
+}
+
+.character {
+    width: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    position: absolute;
+    z-index: -1;
+}
+
+.carde:hover .character {
+    opacity: 1;
+    transform: translate3d(0%, -30%, 100px);
+}
+
+@-webkit-keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width: 1024px) {
+    @-webkit-keyframes marquee {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-125%);
+        }
+    }
+
+    @keyframes marquee {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-125%);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    @-webkit-keyframes marquee {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-166.65%);
+        }
+    }
+
+    @keyframes marquee {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-166.65%);
+        }
+    }
+}
+
+#marquee {
+    padding: 50px 0;
+    width: 100%;
+}
+
+#marquee .view {
+    overflow: hidden;
+    width: 100%;
+}
+
+#marquee .pic-container {
+    display: flex;
+    -webkit-animation: marquee 60s infinite linear;
+    animation: marquee 60s infinite linear;
+}
+
+#marquee .pic-container .pic {
+    flex-basis: 20%;
+    flex-shrink: 0;
+    margin-left: 50px;
+}
+
+@media (max-width: 1024px) {
+    #marquee .pic-container .pic {
+        flex-basis: 25%;
+    }
+}
+
+@media (max-width: 768px) {
+    #marquee .pic-container .pic {
+        flex-basis: 33.33%;
+    }
+}
+
+#marquee img {
+    width: 100%;
+    vertical-align: middle;
+
+}
+
+.move {
+    margin-left: 35px;
+}
+
+@media screen and (max-width:420px) {
+    .move {
+        margin-left: 20px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+}
+
+.copyright-area {
+    background: #202020;
+    padding: 25px 0;
+}
+
+.copyright-text p {
+    margin: 0;
+    font-size: 20px;
+    color: #878787;
+}
+
+.copyright-text p a {
+    color: #FFFFFF;
+}
+
+.footer-menu li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.footer-menu li:hover a {
+    color: #ff5e14;
+}
+
+.footer-menu li a {
+    font-size: 20px;
+    color: #878787;
+}
