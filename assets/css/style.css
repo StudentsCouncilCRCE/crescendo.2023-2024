@@ -15,7 +15,7 @@ body {
 
 
 .hero{
-  background-image: url(../images/phone.jpg);
+  background-image: url(../img/phone.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -24,7 +24,7 @@ body {
 }
 @media (min-width: 586px) {
   .hero{
-    background-image: url(../images/hero.jpg);
+    background-image: url(../img/hero.jpg);
   }
 }
 
