@@ -31,6 +31,13 @@ body {
     }
 }
 
+.bg-darkest {
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(10.5px);
+    -webkit-backdrop-filter: blur(10.5px);
+}
+
 h1 {
     color: white !important;
 }
@@ -54,7 +61,7 @@ h1 {
     .carde {
         margin: 0 50px;
     }
-    
+
 }
 
 .cover-image {
