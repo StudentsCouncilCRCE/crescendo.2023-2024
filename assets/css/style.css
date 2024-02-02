@@ -287,6 +287,8 @@ h1 {
     align-items: center;
     justify-content: center;
     flex-flow: row;
+    height: 42rem;
+    width: 100%;
     position: relative;
 }
 
@@ -301,13 +303,12 @@ h1 {
     transform-style: preserve-3d;
     transform: perspective(180rem);
     transition: all 1200ms cubic-bezier(1, 0.85, 0.23, 1.52);
-    height: 34rem;
+    height: 100%;
     width: 100%;
     background: #0b1c28;
     border-radius: 0.8rem;
     padding: 3.2rem;
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-flow: row;
     position: relative;
@@ -485,7 +486,55 @@ h1 {
     background-repeat: no-repeat;
     height: 12rem;
     aspect-ratio: 1;
-    background-image: url("https://st2.depositphotos.com/1009634/7235/v/950/depositphotos_72350117-stock-illustration-no-user-profile-picture-hand.jpg");
+}
+
+.csi {
+    background-image: url("../img/council/csi.png");
+}
+
+.mozilla {
+    background-image: url("../img/council/mozilla.png");
+}
+
+.codelabs {
+    background-image: url("../img/council/codelabs.png");
+}
+
+.gdsc {
+    background-image: url("../img/council/gdsc.png");
+}
+
+.gda {
+    background-image: url("../img/council/gda.png");
+}
+
+.ieee {
+    background-image: url("../img/council/ieee.jpg");
+}
+
+.acm {
+    background-image: url("../img/council/acm.png");
+
+}
+
+.mavericks {
+    background-image: url("../img/council/mavericks.jpeg");
+}
+
+.iiie {
+    background-image: url("../img/council/iiie.jpg");
+}
+
+.wie {
+    background-image: url("../img/council/wie.jpg");
+}
+
+.asme {
+    background-image: url("../img/council/asme.png");
+}
+
+.ecell {
+    background-image: url("../img/council/ecell.jpeg");
 }
 
 #app .page .back .anima {
@@ -688,5 +737,11 @@ h1 {
 .nft-card-text {
     font-size: 0.9rem;
     font-weight: 500;
+    margin: 0 !important;
+}
+
+.nft-card-click {
+    font-size: 1.7rem;
+    font-weight: 900;
     margin: 0 !important;
 }
