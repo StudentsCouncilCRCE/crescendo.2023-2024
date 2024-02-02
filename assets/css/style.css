@@ -26,6 +26,7 @@ body {
 
 @media (min-width: 586px) {
     .hero {
+        background-position: center;
         background-image: url(../img/hero.jpg);
     }
 }
