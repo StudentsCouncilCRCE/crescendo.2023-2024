@@ -27,13 +27,27 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  console.log("yes");
-  var bodyTags = document.getElementsByTagName("body");
-  console.log("yes yes");
-  for (var i = 0; i < bodyTags.length; i++) {
-    console.log("yes yes yes " + i);
-    bodyTags[i].style.background = "#000";
+window.addEventListener("load", function () {
+  var iframeOverlay = document.getElementById("iframe-overlay");
+  var applyButton = document.querySelector(".apply-button");
+  var isIframeLoaded = false;
+
+  // Function to check if the apply button is converted to an iframe
+  function checkIframeConversion() {
+    var iframes = document.querySelectorAll("iframe");
+    if (iframes.length > 0) {
+      isIframeLoaded = true;
+      iframeOverlay.style.display = "block";
+    }
   }
-  console.log("yes yes yes yes");
+
+  // Check if the apply button is converted to an iframe after a delay
+  setTimeout(checkIframeConversion, 2000); // Adjust as needed
+
+  // Hide the overlay if the iframe is loaded
+  if (isIframeLoaded) {
+    setTimeout(function () {
+      iframeOverlay.style.display = "none";
+    }, 3000); // Hides overlay after 3 seconds (adjust as needed)
+  }
 });
