@@ -22,6 +22,9 @@ body {
 .navbar-brand {
     font-family: Miltown;
 }
+nav{
+    font-size: 1.2rem;
+}
 
 .hero {
     background-image: url(../img/phone.jpg);
@@ -769,4 +772,23 @@ h1 {
     font-size: 1.7rem;
     font-weight: 900;
     margin: 0 !important;
+}
+
+/* Add this CSS to your stylesheet */
+.brochure-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.brochure-btn:hover {
+    background-color: #0b785f;
+    transform: translateY(-2px);
+}
+
+.brochure-btn:active {
+    transform: translateY(0px);
 }
